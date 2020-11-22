@@ -1,0 +1,33 @@
+using System;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
+
+namespace cursodeCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Raiz Quadrada");
+
+            Console.WriteLine("Digite um número:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número:");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número:");
+            double c = double.Parse(Console.ReadLine());
+
+            double X = Math.Sqrt(a);
+            double Y = Math.Sqrt(b);
+            double Z = Math.Sqrt(c);
+
+            Console.WriteLine("A raiz de " + a + " = " + X);
+            Console.WriteLine("A raiz de " + b + " = " + Y);
+            Console.WriteLine("A raiz de " + c + " = " + Z);
+
+
+            
+        }
+	}
+}
