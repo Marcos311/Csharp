@@ -1,0 +1,33 @@
+using System;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+
+namespace cursodeCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {   
+            //indicar que o tema tratado é o Método Absoluto.
+            Console.WriteLine("Abs");
+
+            //Método para o usuário digitar o valor desejado.
+            Console.WriteLine("Digite um número:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número:");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número:");
+            double c = double.Parse(Console.ReadLine());
+
+            //Indica o Método para extrair o valor absoluto da variável.
+            double X = Math.Abs(a);
+            double Y = Math.Abs(b);
+            double Z = Math.Abs(c);
+
+            //Saída dos resultados.
+            Console.WriteLine("O valor absoluto de " + a + " = " + X);
+            Console.WriteLine("O valor absoluto de " + b + " = " + Y);
+            Console.WriteLine("O valor absoluto de " + c + " = " + Z);  
+        }
+	}
+}
