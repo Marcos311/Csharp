@@ -1,0 +1,35 @@
+using System;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
+
+namespace cursodeCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {   
+            //indicar que o tema tratado é potenciação.
+            Console.WriteLine("Pow");
+
+            //Método para o usuário digitar o valor desejado.
+            Console.WriteLine("Digite um número:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um número:");
+            double b = double.Parse(Console.ReadLine());
+           
+            //Indica as potenciações a serem realizadas. O primeiro número é o que vai ser exponenciado e o segundo número 
+            //representa a potência.
+            double W = Math.Pow(a, b);
+            double X = Math.Pow(b, a);
+            double Y = Math.Pow(a, a);
+            double Z = Math.Pow(b, b);
+
+            //Saída dos resultados.
+            Console.WriteLine(a + " elevado à " + b + " = " + W);
+            Console.WriteLine(b + " elevado à " + a + " = " + X);
+            Console.WriteLine(a + " elevado à " + a + " = " + Y);
+            Console.WriteLine(b + " elevado à " + b + " = " + Z);
+        }
+	}
+}
