@@ -1,0 +1,26 @@
+using System;
+using System.Globalization;
+
+namespace Curso_Csharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double comprimento, largura, area, precometro, precofinal;
+
+            Console.WriteLine("Digite o comprimento : ");
+            comprimento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Digite a largura : ");
+            largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Digite o preço do metro quadrado : ");
+            precometro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            area = comprimento * largura;
+            precofinal = area * precometro;
+
+            Console.WriteLine("A área é : " + area.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O preço total é : " + precofinal.ToString("F2", CultureInfo.InvariantCulture));
+        }
+    }
+}
