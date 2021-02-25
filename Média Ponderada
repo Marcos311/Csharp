@@ -1,0 +1,19 @@
+using System;
+using System.Globalization;
+class HelloWorld {
+  static void Main() 
+  {
+    
+        float A, B;
+        double MEDIA;
+        
+        A = float.Parse(Console.ReadLine());
+        B = float.Parse(Console.ReadLine());
+        
+        MEDIA = ((Convert.ToDouble(A) * 3.5) + (Convert.ToDouble(B) * 7.5)) / 11;
+        
+        Console.WriteLine("MEDIA = " + MEDIA.ToString("F4"));
+
+        
+  }
+}
