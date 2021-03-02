@@ -1,0 +1,30 @@
+using System;
+using System.Globalization;
+
+namespace Curso_Csharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome1, nome2;
+            double idade1, idade2, media;
+
+            Console.WriteLine("Digite o nome da primeira pessoa : ");
+            nome1 = Console.ReadLine();
+            Console.WriteLine("Digite a idade da primeira pessoa : ");
+            idade1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o nome da segunda pessoa : ");
+            nome2 = Console.ReadLine();
+            Console.WriteLine("Digite a idade da segunda pessoa : ");
+            idade2 = double.Parse(Console.ReadLine());
+
+            media = (idade1 + idade2) / 2;
+
+            Console.WriteLine("A média das idades entre " + nome1 + " e " + nome2 + " é : " + media.ToString("F1", CultureInfo.InvariantCulture));
+
+
+
+        }
+    }
+}
