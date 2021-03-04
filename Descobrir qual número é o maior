@@ -1,0 +1,49 @@
+using System;
+using System.Globalization;
+
+namespace Curso_Csharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c, MaiorAB, MaiorAC, MaiorBC;
+
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+
+            MaiorAB = (a + b + Math.Abs(a - b)) / 2;
+
+            if (MaiorAB == a)
+            {
+                MaiorAC = (a + c + Math.Abs(a - c)) / 2;
+
+                if (a > c)
+                {
+                    Console.WriteLine(a + " eh o maior ");
+                }
+
+                else
+                {
+                    Console.WriteLine(c + " eh o maior ");
+                }
+            }
+
+            else
+            {
+                MaiorBC = (b + c + Math.Abs(b - c)) / 2;
+
+                if (b > c)
+                {
+                    Console.WriteLine(b + " eh o maior ");
+                }
+
+                else
+                {
+                    Console.WriteLine(c + " eh o maior ");
+                }
+            }
+        }
+    }
+}
