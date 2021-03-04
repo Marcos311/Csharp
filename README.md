@@ -1,2 +1,2 @@
-# Exercicios-de-C-
+# Exercicios-de-CSharp
 Exercícios desenvolvidos em C#.
