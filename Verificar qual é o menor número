@@ -1,0 +1,23 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    int a, b, c;
+    
+    Console.WriteLine("Digite os três números : ");
+    
+    string[] vet;
+    vet = Console.ReadLine().Split(' ');
+    
+    a = int.Parse(vet[0]);
+    b = int.Parse(vet[1]);
+    c = int.Parse(vet[2]);
+    
+    if(a < b & a < c){
+        Console.WriteLine(a + " é o menor número");
+    } else if(b < a & b < c){
+        Console.WriteLine(b + " é o menor número");
+    } else {
+        Console.WriteLine(c + " é o menor número");
+    }
+  }
+}
