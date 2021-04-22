@@ -1,0 +1,53 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    int A, B, C;
+    string[] vet = Console.ReadLine().Split(' ');
+    
+    A = int.Parse(vet[0]);
+    B = int.Parse(vet[1]);
+    C = int.Parse(vet[2]);
+    
+    if(A > B){
+        if(A > C){
+            if(B > C){
+            Console.WriteLine(C);
+            Console.WriteLine(B);
+            Console.WriteLine(A);
+            }else{
+            Console.WriteLine(B);
+            Console.WriteLine(C);
+            Console.WriteLine(A);
+            }
+        }else if(C > A){
+            if(A > B){
+                Console.WriteLine(B);
+                Console.WriteLine(A);
+                Console.WriteLine(C);
+            }
+        }
+    }else if(B > A){
+        if(A > C){
+            Console.WriteLine(C);
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+        }else if(C > A){
+            if(B > C){
+            Console.WriteLine(A);
+            Console.WriteLine(C);
+            Console.WriteLine(B);
+            } else if(C > B){
+                if(C > A){
+                    Console.WriteLine(A);
+                    Console.WriteLine(B);
+                    Console.WriteLine(C);
+                }
+            }
+        }
+    }
+    Console.WriteLine();
+    Console.WriteLine(A);
+    Console.WriteLine(B);
+    Console.WriteLine(C);
+  }
+}
