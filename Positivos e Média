@@ -1,0 +1,57 @@
+using System;
+using System.Globalization;
+
+namespace CursoCSharp__Lógica_de_programação
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D, E, F;
+            int count = 0;
+            double media;
+            double soma = 0.0;
+
+            A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            D = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            E = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            F = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            if(A > 0)
+            {
+                count++;
+                soma = soma + A;
+            }if(B > 0)
+            {
+                count++;
+                soma = soma + B;
+            }if(C > 0)
+            {
+                count++;
+                soma = soma + C;
+            }if(D > 0)
+            {
+                count++;
+                soma = soma + D;
+            }if(E > 0)
+            {
+                count++;
+                soma = soma + E;
+            }if(F > 0)
+            {
+                count++;
+                soma = soma + F;
+            }
+
+            media = soma / count;
+
+            Console.WriteLine(count + " valores positivos");
+            Console.WriteLine(media.ToString("F1", CultureInfo.InvariantCulture));
+
+
+            
+        }
+    }
+}
